@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script language='JavaScript'>
+			var txt="Biodata - Form";
+			var speed=300;
+			var refresh=null;
+			function action() { document.title=txt;
+			txt=txt.substring(1,txt.length)+txt.charAt(0);
+			refresh=setTimeout("action()",speed);}action();
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js.js"></script>
+	</head>
+	<body>
+		<center><h2>Form Pendafaran</h2></center>
+		<form action = "Form2.php" method = "GET" align = "center">
+			Nama : <input type = "text" name = "nama"><br>
+			Password : <input type = "password" name = "password"><br>
+			Jenis Kelamin : 
+				<input type = "radio" name = "jenis_kelamin" value = "laki-laki" checked> laki - laki
+				<input type = "radio" name = "jenis_kelamin" value = "perempuan" checked> perempuan
+			<br>
+			Keahlian : <!-- option sama seperti checkbox tetapi hanya 1 saja -->
+				<input type = "checkbox" name = "keahlian" value = "menari"> menari
+				<input type = "checkbox" name = "keahlian" value = "memanah"> memanah
+				<input type = "checkbox" name = "keahlian" value = "berenang"> berenang
+				<input type = "checkbox" name = "keahlian" value = "berlari"> berlari
+			<br>
+			Tempat Lahir :
+				<select name = "tempat_lahir">
+					<option value = "Jakarta">Jakarta</option>
+					<option value = "Bandung">Bandung</option>
+					<option value = "Bali">Bali</option>
+					<option value = "Jogja">Jogja</option>
+				</select>
+			<br>
+			Deskripsi Diri :
+				<textarea name = "deskripsi" rows = "5" cols = "20"></textarea>
+				<input type = "submit" value = "enter">
+				<input type = "reset" value = "reset">
+			<br>
+		</form>
+	</body>
+</html>

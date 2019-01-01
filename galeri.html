@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language='JavaScript'>
+		var txt="Galeriku";
+		var speed=300;
+		var refresh=null;
+		function action() { document.title=txt;
+		txt=txt.substring(1,txt.length)+txt.charAt(0);
+		refresh=setTimeout("action()",speed);}action();
+	</script>
+	<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css">
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+	<center><h1>Galeri Photo</h1></center>
+	<div class = "container">
+		<div class = "home"><a href = "Latihan.html" title = "Kembali ke menu biodata">Home</a></div>
+		<div class = "kontak"><a href = "Latihan - Halaman 2.html" title = "Kembali ke menu Kontak diri saya">Kontak</a></div>
+		<div class = "video"><a href = "video.html" title = "Kembali ke video game saya">Video Game</a></div>
+	</div>
+	<div>
+		<img src = "1.jpg">
+		<img src = "2.jpg">
+		<img src = "3.jpg">
+		<img src = "4.jpg">
+	</div>
+</body>
+</html>

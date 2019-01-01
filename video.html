@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language='JavaScript'>
+		var txt="Biodata - Video";
+		var speed=300;
+		var refresh=null;
+		function action() { document.title=txt;
+		txt=txt.substring(1,txt.length)+txt.charAt(0);
+		refresh=setTimeout("action()",speed);}action();
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+	<center><h1>Video</h1></center>
+	<center>
+	<video width = "500" height = "400" controls>
+		<source src = "idv.mp4" type = "video/mp4">
+		Your browser does not support the video.
+	</video>
+	</center>
+	<center><h3><a href = "Latihan.html" title = "Kembali ke biodata saya">Kembali</a></h3></center>
+</body>
+</html>
